@@ -13,11 +13,11 @@
 ```json
 	{
 		"meta":{
-			"status_code":200，
-			"hint":success，
+			"status_code":200,
+			"hint":"success"
 		}
 		
-		“ads”:[
+		"ads":[
 			{
 				
 				"img": "http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg",
@@ -25,9 +25,9 @@
 				"order":1
 			},
 			{
-				"img": "http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg"
-				"video": "http://p2.zhimg.com/10/7b/xxxx.mp4"
-				"type":"vido"
+				"img": "http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg",
+				"video": "http://p2.zhimg.com/10/7b/xxxx.mp4",
+				"type":"vido",
 				"order":2
 			}
 			
@@ -58,7 +58,7 @@
 	{
 		"meta":{
 			"status_code":200，
-			"hint":success，
+			"hint":"success"，
 		}
 		
 		"number":1220
