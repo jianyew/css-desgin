@@ -27,7 +27,7 @@
 			{
 				"img": "http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg",
 				"video": "http://p2.zhimg.com/10/7b/xxxx.mp4",
-				"type":"vido",
+				"type":"video",
 				"order":2
 			}
 			
