@@ -58,7 +58,7 @@
 	{
 		"meta":{
 			"status_code":200，
-			"hint":"success"，
+			"hint":"success"
 		}
 		
 		"number":1220
