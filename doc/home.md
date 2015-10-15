@@ -57,7 +57,7 @@
 ```json
 	{
 		"meta":{
-			"status_code":200，
+			"status_code":200,
 			"hint":"success"
 		}
 		

@@ -15,7 +15,7 @@
 	```json
 		{
 			"meta":{
-				"status_code":20000，
+				"status_code":20000,
 				"hint":"success"
 			}
 		}
@@ -26,7 +26,7 @@
 	```json
 		{
 			"meta":{
-				"status_code":40001，
+				"status_code":40001,
 				"hint":"用户或者密码错误"
 			}
 		}
@@ -64,7 +64,7 @@
 	```json
 		{
 			"meta":{
-				"status_code":20000，
+				"status_code":20000,
 				"hint":"success"
 			}
 		}
