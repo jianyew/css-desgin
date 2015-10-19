@@ -156,9 +156,11 @@
 
 
 #### 举报
-* URL: ***POST*** `http：[service]/api/v1/car/{carid}/complaints/{typeid}`
+* URL: ***POST*** `http：[service]/api/v1/complaints`
 
 * POST_BODY:
+  "complaintTypeid":"1"
+  "carid":"123"
   "phone":"123455"
 
 

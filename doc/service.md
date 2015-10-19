@@ -119,14 +119,18 @@
 *
 	- success:
 	  - http_code:200
+	  
 		```json
          {
-            "meta":{},
+            "meta":{
+               "status_code":20000,
+				"hint":"success"
+            },
             "car":{
 					"elementType": "server", //服务
                     "no":"1", 
-                    "category":"?????"
-                    "area":"",
+                    "category":"?????",
+                    "area":"123",
                     "price":"",
                     "startDate":"",
                     "endDate":"",
@@ -156,3 +160,28 @@
 				},
          }
 		```
+
+     - fails
+        - http_code:400
+ 	
+	    - status_code: 40102
+	```json
+		{
+			"meta":{
+				"status_code":40301,
+				"hint":"xxxxxxxxxxx"
+			}
+		}
+	````
+
+
+
+
+#### 举报
+* URL: ***POST*** `http：[service]/api/v1/complaints`
+
+* POST_BODY:
+
+  "complaintTypeid":"1"
+  "serviceid":"123"
+  "phone":"123455"
