@@ -24,7 +24,42 @@
 					
    "傳動" : ""                   	//????
 
+   "location": "x,y"
+
+   "images" : "[***.jpg,***.jpg]"
+
+
+* 响应实例:
+	- success
+    
+     http_code: 200
+ 	
+    ```json
+	{
+		"meta":{
+			"status_code":200,
+			"hint":"success"
+		}
+		"carid":123
+	}
+   ``` 
+   - Fails
+   
+   http_code: 400
+   
+    ```json
+	{
+		"meta":{
+			"status_code": 40600,
+			"hint":"fails xxxxx"
+		}
+		"carid":123
+	}
+   ```
 
 **问题**
-   1. 录入的和显示的有些属性不一致？？
-   2. 那些是不要条件？？
+   1. 录入的和显示的有些属性不一致？？ 需要check一下。
+   2. 那些不是必要要条件？？
+   3. 录入后界面调转到哪里?
+   4. operation 项目有哪些可选值？
+   
