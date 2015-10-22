@@ -17,7 +17,8 @@
 			"meta":{
 				"status_code":20000,
 				"hint":"success"
-			}
+			},
+			"token":"xxxssssss"
 		}
 	
 	```
@@ -55,7 +56,7 @@
 	
 	sex: 1 男 ， 0 女
 	
-	myphotot: 1.jpg 
+	myphoto: 1.jpg 
 
 
 * 响应实例:
@@ -66,7 +67,10 @@
 			"meta":{
 				"status_code":20000,
 				"hint":"success"
-			}
+			},
+			
+			"userId":"3456744"
+			
 		}
 	
 	```
@@ -77,8 +81,7 @@
 * ####问题
  1. 那些是必须项目？
  2. 登陆account注册时候不需要输入吧？
- 3. 注册时候是否需要这样多得item，是否可以在简单注册后补充？
-
+ 3. 注册时候是否需要这样多得item，是否可以简单注册后补充？
  
 	
 
