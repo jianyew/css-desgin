@@ -25,6 +25,6 @@
 
 [10. **Setting**](https://github.com/jianyew/css-desgin/blob/master/doc/setting.md) 設定功能
 
-[11. **Setting**](https://github.com/jianyew/css-desgin/blob/master/doc/favorites.md) 我的收藏
+[11. **Favorites**](https://github.com/jianyew/css-desgin/blob/master/doc/favorites.md) 我的收藏
 
 <!-- #Plan -->
