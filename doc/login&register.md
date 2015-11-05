@@ -18,6 +18,9 @@
 				"status_code":20000,
 				"hint":"success"
 			},
+			"user": {
+				"user_json_object"...
+			},
 			"token":"xxxssssss"
 		}
 	
@@ -93,4 +96,4 @@
 	
 	
 	
-	
+	
