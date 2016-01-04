@@ -18,7 +18,8 @@
 				"status_code":20000,
 				"hint":"success"
 			},
-			"token":"xxxssssss"
+			"token":"xxxssssss",
+			"user" : {user_object}
 		}
 	
 	```
@@ -86,11 +87,41 @@
 	
 
 #### facebook 第三方登陆
-  *Need reseach facebook sdk.*
+	
+* URL: *POST* `http：[service]/api/v1/fblogin`
+* POST_BODY:
 
+	   "fbid": user.fbId!
+	   
+      "fbHeadImage": user.fbHeadImage!
+      
+      "fbName":user.fbName!
+      
+      "fbEmail":user.fbEmail!
+      
+      "gender":
+
+* 响应实例:
+	- success:
 	
+	```json
+		{
+			"meta":{
+				"status_code":20000,
+				"hint":"success"
+			},
+			
+			"token":"xxxssssss",
+			"user" : {user_object}
+			
+		}	
+	```
+
+
+* #### case
 	
-	
-	
-	
+	1. 创建一个facebook table. 
+		* clouments: fbid , fbHeadImage, fbName, fbEmail, gender ， userid（FK）	
+	2. 每次facebook登陆，用facebookid 去query user， 如果有，就返回。
+	如果没有就新建一个user，然后返回给我。
 	
