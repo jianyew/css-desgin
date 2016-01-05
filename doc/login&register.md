@@ -43,23 +43,26 @@
 * URL: *POST* `http：[service]/api/v1/register`
 * POST_BODY:
 	
-	account: "张三/zhangshan@email.com/xxxx.facebook" ??? 好像没定义清除。
-	
 	nickName: "小松"
-	
-	firstName:"姓"
-	
-	lastName:"名"
 	
 	password:"123"
 	
 	email:“zhangshan@email.com”
 	
-	sex: 1 男 ， 0 女
+	gender: 1 男 ， 0 女
 	
-	myphoto: 1.jpg 
+	myphoto: 1.jpg (option)
 
-
+	firstName: (option)
+	
+	lastName: (option)
+	
+	phone: (option)
+	
+	gender: (option)
+	
+	favoiter : [1,2,3,4] 服务器端是否有表存这个？**感兴趣的产品**
+	
 * 响应实例:
 	- success:
 	
@@ -70,7 +73,7 @@
 				"hint":"success"
 			},
 			
-			"userId":"3456744"
+			"user":userobjcet
 			
 		}
 	
@@ -79,10 +82,36 @@
     status_code: 4000*
 
 
-* ####问题
- 1. 那些是必须项目？
- 2. 登陆account注册时候不需要输入吧？
- 3. 注册时候是否需要这样多得item，是否可以简单注册后补充？
+
+ #### 图片上传
+ 
+ * URL: *POST* `http：[service]/api/v1/image/update?type=h/c` (h:头像， c：车)
+ 
+ * 响应实例:
+	- success:
+	
+	```json
+		{
+			"meta":{
+				"status_code":20000,
+				"hint":"success"
+			},
+			
+			"images":[
+				{
+					name:xxxxx.jpg
+					
+				}
+			
+			
+			]
+			
+		}
+	
+	```
+  - fail:
+    status_code: 40010
+ 
  
 	
 
@@ -99,7 +128,7 @@
       
       "fbEmail":user.fbEmail!
       
-      "gender":
+      "fbGender": 1:男， 2；女， 0：猜
 
 * 响应实例:
 	- success:
@@ -121,7 +150,7 @@
 * #### case
 	
 	1. 创建一个facebook table. 
-		* clouments: fbid , fbHeadImage, fbName, fbEmail, gender ， userid（FK）	
+		* clouments: fbid , fbHeadImage, fbName, fbEmail, fbGender ， userid（FK）	
 	2. 每次facebook登陆，用facebookid 去query user， 如果有，就返回。
 	如果没有就新建一个user，然后返回给我。
 	
